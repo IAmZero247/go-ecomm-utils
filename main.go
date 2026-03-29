@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+
 	host := config.Default().GetString("db.postgres.host")
 	port := config.Default().GetInt("db.postgres.port")
 	userName := config.Default().GetString("db.postgres.username")
@@ -24,6 +25,7 @@ func main() {
 	//}
 	//db.Database.Ping()
 	//db.Database.Close()
+
 }
 
 //func OpenDb() (*database.OrmDB, error) {
