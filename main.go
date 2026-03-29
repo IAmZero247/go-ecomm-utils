@@ -22,6 +22,7 @@ func main() {
 	//if err != nil {
 	//	fmt.Printf("Error while connecting  database: %s", err)
 	//}
+	//db.Database.Ping()
 	//db.Database.Close()
 }
 

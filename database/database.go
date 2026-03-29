@@ -59,8 +59,10 @@ func BuildDbUrl(options DBOptions) (string, error) {
 		param = options.PARAM
 	}
 	fmt.Println(param)
-	var dburl string = fmt.Sprintf("user=%s password=%s dbname=%s host=%s port=%d", options.Username,
-		options.Password, options.Database, options.Host, options.Port)
-	fmt.Println("dbUrl: ", dburl)
+	var dburl string = fmt.Sprintf("user=%s password=%s dbname=%s host=%s port=%d sslmode=%s", options.Username,
+		options.Password, options.Database, options.Host, options.Port, "disable")
+
+	fmt.Println("db123Url: ", dburl)
+
 	return dburl, nil
 }

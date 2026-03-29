@@ -31,3 +31,4 @@ go get github.com/fsnotify/fsnotify@v1.8.0
 
 ## useage
 go get github.com/IAmZero247/go-ecomm-config/v1@v1.0.0
+go get github.com/IAmZero247/go-ecomm-utils@v1.0.1
