@@ -6,8 +6,6 @@ import (
 	"github.com/IAmZero247/go-ecomm-utils/config"
 )
 
-// TIP <p>To run your code, right-click the code and select <b>Run</b>.</p> <p>Alternatively, click
-// the <icon src="AllIcons.Actions.Execute"/> icon in the gutter and select the <b>Run</b> menu item from here.</p>
 func main() {
 	host := config.Default().GetString("db.postgres.host")
 	port := config.Default().GetInt("db.postgres.port")
@@ -19,4 +17,18 @@ func main() {
 	fmt.Println("3 : ", userName)
 	fmt.Println("4 : ", password)
 	fmt.Println("5 : ", dbname)
+
+	//db, err := OpenDb()
+	//if err != nil {
+	//	fmt.Printf("Error while connecting  database: %s", err)
+	//}
+	//db.Database.Close()
 }
+
+//func OpenDb() (*database.OrmDB, error) {
+//	orm, err := database.OpenORM()
+//	if err != nil {
+//		return nil, err
+//	}
+//	return orm, nil
+//}
